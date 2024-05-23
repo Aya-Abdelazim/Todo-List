@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Small Screen  */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium Screen */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Larage Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+html {
+  user-select: none;
+  font-size: 62.5%;
+}
+body {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: capitalize;
+}
+
+header h1 {
+  padding: 15px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+section {
+  margin: 20px;
+  font-size: 1.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.todo-list {
+  display: grid;
+  grid-template-columns: 50px 200px 200px 100px;
+  gap: 10px;
+  align-items: center;
+}
+
+.js-name,
+.js-date {
+  font-size: 1.7rem;
+  padding: 0 10px;
+  border-radius: 20px;
+  height: 40px;
+  outline: none;
+}
+
+.js-name:focus::placeholder {
+  opacity: 0;
+  transition: 0.3s;
+}
+.name,
+.date {
+  font-size: 1.7rem;
+  padding: 0 10px;
+}
+
+.js-btn,
+.delete-btn {
+  border: none;
+  padding: 15px 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.js-btn {
+  background-color: green;
+}
+
+.delete-btn {
+  background-color: darkred;
+}
+
+.checkbox {
+  padding-left: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.done {
+  text-decoration: line-through;
+}
